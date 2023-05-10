@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이 페이지</title>
+    <link rel="stylesheet" href="./static/css/header.css" />
+    <link rel="stylesheet" href="./static/css/seperate-box.css" />
+    <link rel="stylesheet" href="./static/css/mypage/index.css" />
+    <link rel="stylesheet" href="./static/css/mypage/mypage.css" />
+    <link rel="stylesheet" href="./static/css/mypage/middle_wrapper.css" />
+    <link rel="stylesheet" href="./static/css/mypage/setting_list.css" />
+
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <header>
+      <hgroup>
+        <ion-icon
+          name="chevron-back-outline"
+          class="header_back_icon"
+          onclick="location.href='cart.html'"
+        ></ion-icon>
+        <div class="header-title">마이페이지</div>
+      </hgroup>
+    </header>
+  </head>
+  <body>
+    <!-- <script src="./js/cart/selectAll.js" type="module"></script>
+    <script src="./js/cart/itemCount.js" type="module"></script> -->
+
+    <div class="mypage">
+      <div class="user_info_container">
+        <div class="user_info-content">
+          <div class="user_info-email">gildong@naver.com</div>
+          <div class="user_info-name">전병규<span>&nbsp&nbsp고객님</span></div>
+        </div>
+        <div class="user_info-logout-btn" onclick="location.href=''">
+          로그아웃
+        </div>
+      </div>
+    </div>
+
+    <div class="mypage_middle_warpper">
+      <div class="address_setting" onclick="location.href=''">
+        <i class="fa-solid fa-location-dot fa-xl"> </i>
+        <div>주소 설정</div>
+      </div>
+      <div class="order_list" onclick="location.href=''">
+        <i class="fa-regular fa-rectangle-list fa-xl"></i>
+        <div>주문 목록</div>
+      </div>
+    </div>
+
+    <div class="seperate-box"></div>
+
+    <div class="mypage_setting-list">
+      <div class="mypage_setting-announce" onclick="location.href=''">
+        <i class="fa-solid fa-list fa-lg"></i>
+        <span>공지사항</span>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div class="mypage_setting-cs" onclick="location.href=''">
+        <i class="fa-solid fa-circle-user fa-lg"></i>
+        <span>고객센터</span>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div class="mypage_setting-env" onclick="location.href=''">
+        <i class="fa-solid fa-gear fa-lg"></i>
+        <span>환경 설정</span>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div class="mypage_setting-password" onclick="location.href=''">
+        <i class="fa-solid fa-unlock-keyhole fa-lg"></i>
+        <span>비밀번호 변경</span>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div class="mypage_setting-withdrawal" onclick="location.href=''">
+        <i class="fa-solid fa-trash fa-lg"></i>
+        <span>회원 탈퇴</span>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div class="mypage_setting-version" onclick="location.href=''">
+        <i class="fa-solid fa-wrench fa-lg"></i>
+        <span>버전 정보</span>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

@@ -1,0 +1,23 @@
+.payment_price {
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.payment_price_title {
+  margin-bottom: 23px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.payment_price :not(.payment_price_title) {
+  margin-left: 14px;
+  line-height: 32px;
+  font-size: 12px;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment_price :not(.payment_price_title) > span {
+  width: 20%;
+}

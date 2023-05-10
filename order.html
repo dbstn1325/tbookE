@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문 / 결제</title>
+    <link rel="stylesheet" href="./static/css/order/index.css" />
+    <link rel="stylesheet" href="./static/css/order/order.css" />
+    <link rel="stylesheet" href="./static/css/header.css" />
+    <link rel="stylesheet" href="./static/css/button.css" />
+    <link rel="stylesheet" href="./static/css/order/order_item_list.css" />
+    <link rel="stylesheet" href="./static/css/order/payment_price.css" />
+    <link rel="stylesheet" href="./static/css/order/payment_method.css" />
+    <link rel="stylesheet" href="./static/css/seperate-box.css" />
+    <link rel="stylesheet" href="./static/img/kakao_pay.png" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <header>
+      <hgroup>
+        <ion-icon
+          name="chevron-back-outline"
+          class="header_back_icon"
+          onclick="location.href='cart.html'"
+        ></ion-icon>
+        <div class="header-title">주문 / 결제</div>
+      </hgroup>
+    </header>
+  </head>
+  <body>
+    <div class="order">
+      <div class="order_user-info">
+        <span>주문자 정보</span>
+        <div class="order_user-name_and_phone">
+          <span>성명 · 연락처</span>
+          <div class="order_user-name">홍길동</div>
+          &nbsp; &nbsp;
+          <div class="order_user-phone">010 - 1234 - 5678</div>
+        </div>
+        <div class="order_user-address">
+          <span>주소</span>
+          <div class="order_user-address-detail">
+            경남 진주시 가좌동 1234-5 (가좌동), 홍길빌 105호 [12345]
+          </div>
+        </div>
+      </div>
+
+      <div class="seperate-box"></div>
+
+      <!-- order-item -->
+      <div class="order_item-list">
+        <div class="order_item-title">
+          <span>주문 상품</span>
+          <div class="order_item-title-total-count">2개</div>
+        </div>
+
+        <div class="order_item">
+          <div class="order_item-name">LG전자 2022 그램15(12세대)</div>
+          <span>&nbsp;&nbsp;/&nbsp;</span>
+          <div class="order_item-count">1개</div>
+        </div>
+        <div class="order_item">
+          <div class="order_item-name">LG전자 2022 그램15(12세대)</div>
+          <span>&nbsp;&nbsp;/&nbsp;</span>
+          <div class="order_item-count">1개</div>
+        </div>
+      </div>
+
+      <div class="seperate-box"></div>
+
+      <!-- payment price -->
+      <div class="payment_price">
+        <div class="payment_price_title">결제 금액</div>
+        <div class="payment_price-total_item">
+          <span>총 상품 금액</span>2,682,700 원
+        </div>
+        <div class="payment_price-total_delivery">
+          <span>총 배송비</span>2,500 원
+        </div>
+        <div class="payment_price-total">
+          <span>총 결제 금액</span>2,685,200 원
+        </div>
+      </div>
+
+      <div class="seperate-box"></div>
+
+      <!-- payment method -->
+      <div class="payment_method">
+        <span>결제 수단</span>
+
+        <label class="payment_method-kakao">
+          <input type="radio" name="payment_method" value="kakao" />
+          <img
+            src="./static/img/kakao_pay.png"
+            alt=""
+            class="kakao_pay-image"
+          />
+        </label>
+
+        <label class="payment_method-generate">
+          <input type="radio" name="payment_method" value="general" />
+          <span>일반 결제</span>
+        </label>
+      </div>
+
+      <div class="bottom_btn_container">
+        <button class="bottom_btn" onclick="location.href='order.html'">
+          <span class="bottom_btn_text">결제하기</span>
+        </button>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>

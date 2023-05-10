@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장바구니</title>
+    <link rel="stylesheet" href="./static/css/cart/index.css" />
+    <link rel="stylesheet" href="./static/css/cart/cart.css" />
+    <link rel="stylesheet" href="./static/css/cart/icon.css" />
+    <link rel="stylesheet" href="./static/css/cart/buy-btn.css" />
+    <link rel="stylesheet" href="./static/css/cart/expect_price.css" />
+    <link rel="stylesheet" href="./static/css/button.css" />
+    <link rel="stylesheet" href="./static/css/cart/header.css" />
+    <link rel="stylesheet" href="./static/img/laptop.png" />
+    <link rel="stylesheet" href="./static/css/header.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <header>
+      <hgroup>
+        <ion-icon
+          name="chevron-back-outline"
+          class="header_back_icon"
+          onclick="location.href='index.html'"
+        ></ion-icon>
+        <div class="header-title">장바구니</div>
+      </hgroup>
+    </header>
+  </head>
+  <body>
+    <script src="./js/cart/selectAll.js" type="module"></script>
+    <script src="./js/cart/itemCount.js" type="module"></script>
+    <script src="./js/cart/purchase.js" type="module"></script>
+
+    <div class="cart">
+      <!-- cart_top_menu -->
+      <div class="cart_top-menu">
+        <input
+          type="checkbox"
+          class="check-all"
+          value="selectAll"
+          style="display: none"
+        />
+        <ion-icon
+          name="checkbox-outline"
+          onclick="document.querySelector('.check-all').click();"
+        ></ion-icon>
+        <div class="select_all-text">전체 선택</div>
+        <div class="select_all-number">
+          <div id="checked-count">0</div>
+          &nbsp/&nbsp
+          <div id="total-count">0</div>
+        </div>
+      </div>
+
+      <!-- cart_item_list -->
+      <div class="cart_item-list">
+        <div class="cart_item">
+          <div class="cart_item-title">
+            <input type="checkbox" class="check-item" style="display: none" />
+            <ion-icon
+              name="checkbox-outline"
+              onclick="this.previousElementSibling.click();"
+            ></ion-icon>
+            <div class="cart_item-title-text">LG전자 2022 그램15(12세대)</div>
+            <ion-icon name="close-outline" class="cart_item-cancel"></ion-icon>
+          </div>
+          <div class="cart_item-content-wrapper">
+            <img src="./static/img/laptop.png" alt="" class="cart_item-image" />
+            <div class="cart_item-content">
+              <div class="cart_item-makeby">
+                제조사:
+                <div class="cart_item-company">LG</div>
+              </div>
+              <div class="cart_item-release">1~2 일내 출고 예정</div>
+              <div class="cart_item-price">1,341,350</div>
+              원
+            </div>
+
+            <div class="cart_item_count">
+              <div class="cart_item_count-minus">-</div>
+              <input
+                class="cart_item_count-box"
+                type="number"
+                value="1"
+                min="1"
+                max="99"
+                readonly
+              />
+              <div class="cart_item_count-plus">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart_item">
+          <div class="cart_item-title">
+            <input type="checkbox" class="check-item" style="display: none" />
+            <ion-icon
+              name="checkbox-outline"
+              onclick="this.previousElementSibling.click();"
+            ></ion-icon>
+            <div class="cart_item-title-text">LG전자 2022 그램15(12세대)</div>
+            <ion-icon name="close-outline" class="cart_item-cancel"></ion-icon>
+          </div>
+          <div class="cart_item-content-wrapper">
+            <img src="./static/img/laptop.png" alt="" class="cart_item-image" />
+            <div class="cart_item-content">
+              <div class="cart_item-makeby">
+                제조사:
+                <div class="cart_item-company">LG</div>
+              </div>
+              <div class="cart_item-release">1~2 일내 출고 예정</div>
+              <div class="cart_item-price">1,341,350</div>
+              원
+            </div>
+            <div class="cart_item_count">
+              <div class="cart_item_count-minus">-</div>
+              <input
+                class="cart_item_count-box"
+                type="number"
+                value="1"
+                min="1"
+                max=""
+                readonly
+              />
+              <div class="cart_item_count-plus">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="cart_item">
+          <div class="cart_item-title">
+            <input type="checkbox" class="check-item" style="display: none" />
+            <ion-icon
+              name="checkbox-outline"
+              onclick="this.previousElementSibling.click();"
+            ></ion-icon>
+            <div class="cart_item-title-text">LG전자 2022 그램15(12세대)</div>
+            <ion-icon name="close-outline" class="cart_item-cancel"></ion-icon>
+          </div>
+          <div class="cart_item-content-wrapper">
+            <img src="./static/img/laptop.png" alt="" class="cart_item-image" />
+            <div class="cart_item-content">
+              <div class="cart_item-makeby">
+                제조사:
+                <div class="cart_item-company">LG</div>
+              </div>
+              <div class="cart_item-release">1~2 일내 출고 예정</div>
+              <div class="cart_item-price">1,341,350</div>
+              원
+            </div>
+            <div class="cart_item_count">
+              <div class="cart_item_count-minus">-</div>
+              <input
+                class="cart_item_count-box"
+                type="number"
+                value="1"
+                min="1"
+                max=""
+                readonly
+              />
+              <div class="cart_item_count-plus">+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- expect_price_container -->
+      <div class="expect_price-container">
+        <span class="expect_price-title">결제 예상 금액</span>
+
+        <div class="total_price-container">
+          <div class="total_price-item">
+            총 상품 금액
+            <div>2,682,700 원</div>
+          </div>
+          <div class="total_price-delivery">
+            총 배송비
+            <div>2,500 원</div>
+          </div>
+          <div class="total_price-payment">
+            총 결제 금액
+            <div>2,685,200 원</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom_btn_container">
+        <button class="bottom_btn purchase_button">
+          <span class="bottom_btn_text">구매하기</span>
+        </button>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>
